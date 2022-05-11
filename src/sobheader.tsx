@@ -1,5 +1,5 @@
-import { NavHost } from './contents/sobheader/navHost';
-import { NavSocial } from './contents/sobheader/navSocial';
+import { NavHost } from './contents/sobheader/navHost.js';
+import { NavSocial } from './contents/sobheader/navSocial.js';
 
 import "./contents/styles/sobHeader.css"
 

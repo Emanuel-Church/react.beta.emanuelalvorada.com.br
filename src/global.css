@@ -44,7 +44,8 @@ body {
     margin: 0;
 }
 
-._ime-sobheader {
+._ime-sobheader, ._ime-subfooter {
     background: var(--bg-102);
+    color: var(--color-307);
     padding: 1rem;
 }

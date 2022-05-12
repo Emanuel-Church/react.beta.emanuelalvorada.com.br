@@ -1,5 +1,5 @@
-._ime-sobheader .sob-header {
+.sub-footer {
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: space-between;
 }

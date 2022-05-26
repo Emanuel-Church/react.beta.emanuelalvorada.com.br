@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta name="language" content="pt-BR">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>Uma Família em Cristo | Igreja Emanuel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igreja Emanuel | React - B2.1.5</title>
 
-    <meta name="author" content="Igreja Missionária Emanuel">
-    <meta property="article:author" content="Igreja Missionária Emanuel">
-
-    <link rel="shortcut icon" href="http://emanuelalvorada.com.br/assets/brand/ime/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="https://d8a923b1h5a1n.cloudfront.net/brand/logo.png?track=emanuelalvorada.com.br-Header">
   </head>
-  <body>
-    <header>
-      <section class="_ime-sobheader" id="sobheader"></section>
+  <body class="ime">
+    <header class="ime-header" id="header">
     </header>
-    <footer>
-      <section class="_ime-subfooter" id="subfooter"></section>
+    <footer class="ime-footer" id="footer">
+      <section class="_ime-footer" id="id-footer"></section>
     </footer>
-    <script type="module" src="/src/main.tsx"></script>
+    <section id="widget"></section>
+    <script type="module" src="/src/components/header/main.tsx"></script>
+    <script type="module" src="/src/components/footer/main.tsx"></script>
+    <script type="module" src="/src/components/widgets/main.tsx"></script>
   </body>
+  <style>
+    .ime-footer {
+      margin-top: 5rem;
+    }
+  </style>
 </html>

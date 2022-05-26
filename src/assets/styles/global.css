@@ -1,0 +1,81 @@
+/* Beta 2.1.0 */
+:root {
+    /* Background */
+    --bg-101: #f5f2f0;
+    --bg-102: #242020;
+    --bg-103: #423e3e;
+    --bg-104: #b6b6b6;
+    /* Fonts */
+    --font-201: 800 4rem "Azonix", "Overpass", Arial, Helvetica, sans-serif;
+    --font-202: 800 3rem "Overpass", Arial, Helvetica, sans-serif;
+    --font-203: 700 2.25rem "Overpass", Arial, Helvetica, sans-serif;
+    --font-204: 600 1.5rem "Overpass", Arial, Helvetica, sans-serif;
+    --font-205: 500 1.25rem "Overpass", Arial, Helvetica, sans-serif;
+    --font-206: 500 1.125rem "Overpass", Arial, Helvetica, sans-serif;
+    --font-207: 500 1rem "Inter", Arial, Helvetica, sans-serif;
+    --font-208: 400 0.875rem "Inter", Arial, Helvetica, sans-serif;
+    --font-209: 400 0.75rem "Inter", Arial, Helvetica, sans-serif;
+    /* Colors */
+    --color-301: #0b0d17;
+    --color-302: #595959;
+    --color-303: #ecf7f8;
+    --color-304: #d9e3e4;
+    --color-305: #eca256;
+    --color-306: #b5020b;
+    --color-307: #b0b7b8;
+    /* Effects */
+    --effect-401: #b5020b;
+    --effect-402: #eca256;
+    --effect-403: #f5f2f0;
+    --effect-404: #eca256;
+    --effect-405: rgba(100, 100, 111, 0.2);
+    --effect-406: rgba(202, 202, 202, 0.2);
+    --effect-407: 0.5s;
+    --effect-408: 0.3s;
+    --effect-409: 3rem;
+    --effect-410: none;
+}
+
+.ime,
+html {
+    padding: 0 !important;
+    margin: 0;
+
+    overflow: auto !important;
+
+    font: var(--font-207);
+}
+
+.ime-header, .ime-footer {
+    background: var(--bg-102);
+    color: var(--color-307);
+}
+
+.__ime-sobheader, 
+.__ime-subfooter,
+.__ime-mainfooter,
+.__ime-header {
+    max-width: 85rem;
+    margin: auto;
+    padding: 0.8rem 2rem;
+}
+
+.__ime-header {
+    padding: 0;
+}
+
+.__ime-mainfooter {
+    padding: 2rem;
+}
+
+.__ime-subfooter {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+/* == Divisor == */
+
+.divisor {
+    border: 1px solid var(--color-302);
+}

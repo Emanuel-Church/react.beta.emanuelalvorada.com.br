@@ -1,8 +1,6 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { CaretDown } from "phosphor-react";
 
-import "/src/assets/styles/ElWmYqei/PcqIdcNKc.css";
-
 const linksministers = {
     HOME: {
         title: "Início",
@@ -89,7 +87,6 @@ export function T0Yo() {
       <Disclosure>
         <Disclosure.Button className="_discl-btn">
           <h5>Ministérios</h5>
-          <CaretDown className="_discl-btn_icon" weight="bold" />
         </Disclosure.Button>
         <Transition
           enter="transition duration-100 ease-out"

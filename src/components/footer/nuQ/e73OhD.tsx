@@ -1,8 +1,6 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { CaretDown } from "phosphor-react";
 
-import "/src/assets/styles/ElWmYqei/PcqIdcNKc.css";
-
 const linkspolitycs = {
     PRIVACY: {
         title: "Privacidade",
@@ -40,7 +38,6 @@ export function BnOg() {
         <Disclosure>
           <Disclosure.Button className="_discl-btn">
             <h5>Políticas</h5>
-            <CaretDown className="_discl-btn_icon" weight="bold" />
           </Disclosure.Button>
           <Transition
             enter="transition duration-100 ease-out"

@@ -1,8 +1,6 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { CaretDown } from "phosphor-react";
 
-import "/src/assets/styles/ElWmYqei/PcqIdcNKc.css";
-
 const linksinstit = {
     ABOUT: {
         title: "Quem somos",
@@ -54,7 +52,6 @@ export function LkE5() {
         <Disclosure>
           <Disclosure.Button className="_discl-btn">
             <h5>Institucional</h5>
-            <CaretDown className="_discl-btn_icon" weight="bold" />
           </Disclosure.Button>
           <Transition
             enter="transition duration-100 ease-out"

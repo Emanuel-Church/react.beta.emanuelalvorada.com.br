@@ -1,0 +1,94 @@
+/* == GLOBAL == */
+
+._search ._search-input,
+._search ._search-input ._search-ntm {
+  color: var(--color-307);
+  border: 2px solid var(--color-302) !important;
+  border-radius: 2rem;
+}
+
+._search ._search-input input,
+._search ._search-input input:focus-visible,
+._search ._search-input ._search-ntm,
+._search ._search-input ._search-ntm:focus-visible {
+  outline: none;
+  border: none;
+
+  background: none;
+}
+
+._search ._search-input ._search-ntm:focus-visible,
+._search ._search-input ._search-ntm:hover,
+._search ._search-input:hover {
+  transition: all var(--effect-407);
+
+  border: 2px solid var(--effect-402) !important;
+  color: var(--effect-402);
+}
+
+/* == Search == */
+
+._search ._search-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.4rem;
+}
+
+._search ._search-input input {
+  padding: 0.5rem 0.8rem;
+
+  color: var(--color-307);
+}
+
+._search ._search-input input[type="search"]::-webkit-search-decoration,
+._search ._search-input input[type="search"]::-webkit-search-cancel-button,
+._search ._search-input input[type="search"]::-webkit-search-results-button,
+._search
+  ._search-input
+  input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+._search ._search-input ._search-ntm {
+  padding: 0.3rem;
+
+  display: grid;
+  place-content: center;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+._search ._search-input input:focus-visible {
+  color: var(--effect-402);
+}
+
+/* Papover SearchBar */
+
+.sb-brand {
+  display: none !important;
+}
+
+#sb-search.sb-dark-auto .sb-content .sb-search,
+#sb-search.sb-dark-auto .sb-content.sb-hero .sb-search {
+  background: var(--bg-102) !important;
+  color: var(--color-307) !important;
+}
+
+#sb-search.sb-dark-auto input {
+  color: var(--color-304) !important;
+}
+
+#sb-search .sb-search-icon {
+  background: transparent !important;
+  border: transparent;
+}
+
+#sb-search .sb-search-icon:hover {
+  transition: all var(--effect-407);
+
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

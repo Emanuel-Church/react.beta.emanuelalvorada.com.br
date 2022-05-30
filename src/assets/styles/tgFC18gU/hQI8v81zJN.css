@@ -1,35 +1,139 @@
+/* Back To Top */
 .__ime-backtotop .btn-top {
-    position: fixed;
-    bottom: 1.6rem;
-    right: 1.6rem;
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
 
-    background-color: var(--bg-103);
-    color: var(--color-304);
+  background-color: var(--bg-103);
+  color: var(--color-304);
 
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 
-    padding: 0.4rem;
-    border-radius: 50%;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 50%;
 
-    display: flex;
-    place-content: center;
+  display: flex;
+  place-content: center;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    box-shadow: 0px 26px 56px 0px rgba(89, 89, 89, 1);
+  box-shadow: 0px 26px 56px 0px rgba(89, 89, 89, 1);
 }
 
 .__ime-backtotop .btn-top:hover {
-    transition: all var(--effect-407);
-    filter: drop-shadow(var(--effect-411));
+  transition: all var(--effect-407);
+  filter: drop-shadow(var(--effect-411));
 
-    background-color: var(--bg-102);
-    color: var(--effect-402);
+  background-color: var(--bg-102);
+  color: var(--effect-402);
 }
 
+/* Alert Cookies */
+._dialog-panel {
+  width: 25rem;
+  padding: 2rem 1.5rem;
+
+  background-color: var(--bg-102);
+  border: 2px solid var(--color-302);
+  color: var(--color-307);
+
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+._dialog-title {
+  font: var(--font-203);
+  color: var(--color-304);
+  margin: auto 0;
+}
+
+._dialog-panel span {
+  font: var(--font-207);
+  text-align: justify;
+
+  margin: 1rem 0;
+
+  line-height: 1.42rem;
+}
+
+._dialog-panel span a {
+  font: var(--font-207);
+  color: var(--color-304);
+
+  text-align: justify;
+  text-underline-offset: 2px;
+}
+
+._dialog-panel span a:hover {
+  transition: all var(--effect-407);
+  color: var(--effect-402);
+}
+
+._dialog-panel button {
+  width: min-content;
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+
+  border: 1.5px solid var(--color-305);
+  background: none;
+
+  font: var(--font-206);
+  color: var(--color-303);
+}
+
+._dialog-panel button:hover {
+  transition: all var(--effect-408);
+  background-color: var(--effect-402);
+
+  color: var(--bg-102);
+}
+
+/* == MOBILE == */
+
 @media screen and (max-width: 768px) {
-    .__ime-backtotop .btn-top {
-        bottom: 0.5rem;
-        right: 0.5rem;
-    }
+  /* Back To Top */
+  .__ime-backtotop .btn-top {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+
+  /* Alert Cookies */
+  ._dialog-panel {
+    bottom: 0;
+    left: 0;
+
+    width: auto;
+
+    padding: 2rem 1rem;
+  }
+
+  ._dialog-panel span {
+    margin: 1.5rem 0;
+  }
+
+  ._dialog-panel button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Alert Cookies */
+  ._dialog-title {
+    font-size: 1.6rem;
+  }
+
+  ._dialog-panel span,
+  ._dialog-panel a {
+    font-size: 0.9rem;
+  }
+
+  ._dialog-panel button {
+    width: auto;
+  }
 }

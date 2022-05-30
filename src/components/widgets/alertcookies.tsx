@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-import "/src/assets/styles/tgFC18gU/4uVGiZ.css";
-
 export function AlertCookies() {
   let [isOpen, setIsOpen] = useState(true);
 

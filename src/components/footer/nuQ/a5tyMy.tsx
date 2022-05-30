@@ -1,15 +1,12 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { At, CaretDown, MapPin, WhatsappLogo } from "phosphor-react";
 
-import "/src/assets/styles/ElWmYqei/PcqIdcNKc.css";
-
 export function UHiS() {
     return (
         <div className="_discl">
             <Disclosure>
                 <Disclosure.Button className="_discl-btn">
                     <h5>Contato</h5>
-                    <CaretDown className="_discl-btn_icon" weight="bold" />
                 </Disclosure.Button>
                 <Transition
                     enter="transition duration-100 ease-out"
